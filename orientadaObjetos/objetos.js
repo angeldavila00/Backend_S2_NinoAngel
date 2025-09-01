@@ -32,7 +32,7 @@ let firulais = perro("Firulais", 9);
 
 console.log(firulais);
 
-// Class
+// Class 
 class animales {
     constructor(nombre, especie) {
         this.nombre = nombre;
@@ -46,3 +46,5 @@ class animales {
 
 let bongo = new animales ("Bongo", "Peludo");
 console.log(bongo)
+
+
