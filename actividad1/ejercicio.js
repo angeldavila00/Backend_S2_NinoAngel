@@ -16,8 +16,7 @@ const gil = new person("Gil");
 gil.introduceSelf(); // Hola, soy Gil
 
 //Encapsulamiento
-/**Explicacion
- * Oculta los datos internos de un objeto y solo permite acceder a ellos mediante metodos.
+/** Oculta los datos internos de un objeto y solo permite acceder a ellos mediante metodos.
  * En javaScript se usa # (Private fields) o convenciones
  */
 
@@ -74,9 +73,10 @@ class animal {
 }
 
 class perro extends animal {
-    ladrar() {
-        console.log("Guau Guau");
-    }
+    constructor(ladra){
+        super(ladra)
+        console.log("Guau  nn Guau");
+    }  
 }
 
 class gato extends animal {
@@ -87,7 +87,6 @@ class gato extends animal {
 
 const miPerro = new perro();
 miPerro.hacerSonido();
-miPerro.ladrar();
 
 const miGato = new gato();
 miGato.hacerSonido();
